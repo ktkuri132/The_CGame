@@ -1,0 +1,73 @@
+# Clang-Format 配置文件
+# 基于提供的代码风格生成
+
+Language: Cpp
+BasedOnStyle: LLVM
+
+# 缩进设置 - 使用 Tab 键
+UseTab: Always
+TabWidth: 4
+IndentWidth: 4
+
+# 括号风格 - 左括号在同一行
+BreakBeforeBraces: Attach
+
+# 指针和引用对齐 - 星号靠近类型
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+# switch-case 缩进
+IndentCaseLabels: true
+IndentCaseBlocks: false
+
+# 函数参数
+AlignAfterOpenBracket: Align
+AllowAllParametersOfDeclarationOnNextLine: true
+BinPackParameters: true
+BinPackArguments: true
+
+# 大括号换行设置
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortBlocksOnASingleLine: Never
+
+# 空格设置
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpaceInEmptyParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpacesInAngles: false
+
+# 预处理器指令
+IndentPPDirectives: None
+
+# 对齐设置
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignOperands: true
+AlignTrailingComments: true
+
+# 列宽限制
+ColumnLimit: 100
+
+# 结构体初始化
+Cpp11BracedListStyle: true
+SpaceBeforeCpp11BracedList: true
+
+# 换行设置
+BreakBeforeBinaryOperators: None
+AlwaysBreakAfterReturnType: None
+
+# 包含排序
+SortIncludes: true
+IncludeBlocks: Preserve
+
+# 空行设置
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# 注释设置
+ReflowComments: true
